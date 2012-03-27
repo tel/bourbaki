@@ -2,3 +2,5 @@
 !vendor/*.js
 *.log
 *.psd
+.DS_Store
+.#*
