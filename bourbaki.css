@@ -1,21 +1,13 @@
-body {
-    background: transparent url(gradwide.png) repeat-y left top;
-}
-
-#background {
-    position: absolute;
-    top: 0; left: 0;
-    z-index: -2;
-    width: 100%;
-    height: 100%;
-    background: transparent url(gradwide-rev.png) repeat-y right top;
-}
-
 #frame {
     height: 70px;
-    margin: 180px 0 0 0;
+    width: 800px;
+    margin: 120px 0 0 0;
     padding-left: 30px;
     background: url(logo-small.gif) left center no-repeat;
+}
+
+#frame svg {
+    margin-left: 6px;
 }
 
 #write { 
@@ -24,33 +16,89 @@ body {
 }
 
 #wrap {
-    margin-left: 30px;
+    margin-left: 36px;
 }
 
 h1 {
-    font: 128pt/128pt Ostrich;
-    position: absolute;
-    z-index: 1;
-    color: #a54
+    display: block;
+    height: 60px;
+    font: 24pt/64px "bello-pro" "Bello Pro" "Gill Sans" "Gill Sans MT" "Futura" "Cambria";
+    color: #111;
 }
 
 #nav {
     display: block;
-}
-
-#nav li {
-    display: inline;
-    list-style: none;
+    margin-bottom: 10px;
+    overflow: hidden;
 }
 
 #nav a {
-    font: 12px/24px "Gotham Rounded";
-    height: 24px;
+    font: 16px/40px chaparral-pro;
+    font-weight: 100;
+    background: #ddd;
+    height: 40px;
+    width: 219px;
+    margin-right: 12px;
+    text-align: center;
     display: block;
-    padding-left: 30px;
+    float: left;
 }
 
 #nav a:hover {
-    background: #ffac36;
-    color: #fff;
+    background: rgb(255, 249, 89);
+}
+
+#body {
+    font: 12pt/15px chaparral-pro;
+    line-height: 30px;
+    clear: both;
+    width: 681px;
+}
+
+#body p {
+    margin-bottom: 20px;
+}
+
+#body strong {
+    font-weight: 700;
+}
+
+.hr1 {
+    width: 680px;
+    height: 10px;
+    background: #ddd;
+    margin-bottom: 10px;
+}
+
+.hr2 {
+    width: 680px;
+    height: 2px;
+    background: #ddd;
+    margin-top: -8px;
+    margin-bottom: 10px;
+}
+
+a, a:link, a:visited, a:hover, a:active {
+    text-decoration: none;
+    color: #333;
+}
+
+#body a, #body a:link, #body a:visited {
+    color: #333;
+    -webkit-transition: text-shadow 2s cubic-bezier(0, 1, 0, 1);
+    -moz-transition: text-shadow 2s cubic-bezier(0, 1, 0, 1);
+    -ms-transition: text-shadow 2s cubic-bezier(0, 1, 0, 1);
+    -o-transition: text-shadow 2s cubic-bezier(0, 1, 0, 1);
+    transition: text-shadow 2s cubic-bezier(0, 1, 0, 1);
+}
+
+#body a:hover, #body a:active {
+    text-decoration: none;
+    color: #000;
+    text-shadow: #000 0 0 10px;
+    -webkit-transition: text-shadow 2s cubic-bezier(0, 1, 0, 1);
+    -moz-transition: text-shadow 2s cubic-bezier(0, 1, 0, 1);
+    -ms-transition: text-shadow 2s cubic-bezier(0, 1, 0, 1);
+    -o-transition: text-shadow 2s cubic-bezier(0, 1, 0, 1);
+    transition: text-shadow 2s cubic-bezier(0, 1, 0, 1);
 }
