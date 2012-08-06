@@ -92,6 +92,10 @@ a, a:link, a:visited, a:hover, a:active {
     transition: text-shadow 2s cubic-bezier(0, 1, 0, 1);
 }
 
+#body:hover a {
+	border-bottom: thin solid rgb(255, 249, 89);
+}
+
 #body a:hover, #body a:active {
     text-decoration: none;
     color: #000;
